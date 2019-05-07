@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import Game from './Components/Game/Game';
-import Gamelist from './Components/GameList/Gamelist';
-import './App.css';
+import Game from '../Game/Game';
 
-class App extends Component {
+class Gamelist extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,13 +18,14 @@ class App extends Component {
       })
     })
   }
+
   render() {
     return (
       <div>
-        {this.state.games.length > 0 ? <Game games={this.state.games} /> : null}
+        <Game />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default Gamelist;
