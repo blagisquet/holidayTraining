@@ -8,7 +8,7 @@ class Game extends Component {
   render() {
     return (
       <div>
-        {Gamelist.games.map((game) => {
+        {this.props.games.map((game) => {
           return <img width="200px" heigth="200px" src={game.image1} />
         })}
       </div>
