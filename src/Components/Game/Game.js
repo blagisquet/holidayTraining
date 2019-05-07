@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import Gamelist from '../GameList/Gamelist';
 
-class Game extends Component {
-  constructor(props) {
+const Game = props => (
+  <div>
+    <img width="200px" height="200px" src={props.pochette} />
+  </div>
+);
+/*  constructor(props) {
     super(props);
   }
   render() {
     return (
       <div>
-        {this.props.games.map((game) => {
-          return <img width="200px" heigth="200px" src={game.image1} />
-        })}
+        <img src={game.pochette} />
       </div>
     )
   };
-}
+}*/
 
 export default Game;

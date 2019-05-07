@@ -16,13 +16,16 @@ class Gamelist extends Component {
       this.setState({
         games: result
       })
+      console.log(result)
     })
   }
 
   render() {
     return (
       <div>
-        <Game />
+        {this.state.games.length > 0 ? this.state.games.map((game) => (
+          <Game image={game.pochette} />
+        )) : null}       
       </div>
     )
   }
