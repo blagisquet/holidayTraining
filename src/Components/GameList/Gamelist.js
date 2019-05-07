@@ -24,7 +24,7 @@ class Gamelist extends Component {
     return (
       <div>
         {this.state.games.length > 0 ? this.state.games.map((game) => (
-          <Game image={game.pochette} />
+          <Game image={game.pochette} name={game.name} description={game.description}/>
         )) : null}       
       </div>
     )

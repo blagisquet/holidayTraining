@@ -31,3 +31,12 @@
     transform: rotate(360deg);
   }
 }
+
+.orga {
+  max-width: 400px;
+  max-height: 800px;
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  
+}
